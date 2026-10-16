@@ -17,6 +17,14 @@ The website of Lumen Studio, an AI research studio in Luxembourg building intell
 
 </div>
 
+## Preview
+
+| Home | Projects |
+| --- | --- |
+| ![Home page](assets/screenshots/home.png) | ![Projects page](assets/screenshots/projects.png) |
+| **Velox** | **Piste** |
+| ![Velox page](assets/screenshots/velox.png) | ![Piste page](assets/screenshots/piste.png) |
+
 ## Overview
 
 A fast, dependency-free static site written in plain HTML, CSS and JavaScript. There is no framework, bundler or build step.
@@ -60,7 +68,7 @@ python3 -m http.server 8000   # http://localhost:8000
 ├── 404.html          # Not-found page
 ├── style.css         # Shared styles
 ├── script.js         # Nav, menu and scroll animations
-├── assets/           # Logo, banner and social preview images
+├── assets/           # Logo, banner, social preview and README screenshots
 ├── CNAME             # Custom domain for GitHub Pages
 ├── robots.txt
 └── sitemap.xml
