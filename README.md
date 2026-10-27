@@ -22,8 +22,8 @@ The website for Lumen Studio, my personal projects portfolio: intelligent system
 | Home | Projects |
 | --- | --- |
 | ![Home page](assets/screenshots/home.png) | ![Projects page](assets/screenshots/projects.png) |
-| **Velox** | **Piste** |
-| ![Velox page](assets/screenshots/velox.png) | ![Piste page](assets/screenshots/piste.png) |
+| **Velox** | |
+| ![Velox page](assets/screenshots/velox.png) | |
 
 ## Overview
 
@@ -32,9 +32,8 @@ A fast, dependency-free static site written in plain HTML, CSS and JavaScript. T
 | Page | Description |
 | --- | --- |
 | [`index.html`](index.html) | Landing page: hero, featured project (Velox), a selection of projects, about and contact |
-| [`projects.html`](projects.html) | All 13 projects with live thumbnails, a category filter and links to each site and repository |
+| [`projects.html`](projects.html) | All 7 projects with live thumbnails, a category filter and links to each site and repository |
 | [`velox.html`](velox.html) | Velox, the autonomous trading system |
-| [`piste.html`](piste.html) | Piste, the ski companion app |
 
 ## Features
 
@@ -65,7 +64,6 @@ python3 -m http.server 8000   # http://localhost:8000
 ├── index.html        # Landing page
 ├── projects.html     # All projects
 ├── velox.html        # Velox product page
-├── piste.html        # Piste product page
 ├── 404.html          # Not-found page
 ├── style.css         # Shared styles
 ├── script.js         # Nav, menu and scroll animations

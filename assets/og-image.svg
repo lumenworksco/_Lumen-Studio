@@ -82,10 +82,10 @@
   <text x="115" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">Velox</text>
 
   <rect x="158" y="448" width="58" height="24" rx="5" fill="rgba(74,108,247,0.10)" stroke="#1e1e30" stroke-width="1"/>
-  <text x="187" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">Piste</text>
+  <text x="187" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">Tokn</text>
 
   <rect x="226" y="448" width="74" height="24" rx="5" fill="rgba(74,108,247,0.10)" stroke="#1e1e30" stroke-width="1"/>
-  <text x="263" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">FinSight</text>
+  <text x="263" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">Feather</text>
 
   <rect x="310" y="448" width="96" height="24" rx="5" fill="rgba(74,108,247,0.10)" stroke="#1e1e30" stroke-width="1"/>
   <text x="358" y="464" font-family="sans-serif" font-size="11" font-weight="500" fill="#7b93fa" text-anchor="middle">CalmCampus</text>
@@ -130,7 +130,7 @@
       fill="rgba(74,108,247,0.06)"/>
   </g>
 
-  <!-- ▸ CARD 2 – Piste -->
+  <!-- ▸ CARD 2 – Tokn -->
   <rect x="658" y="230" width="502" height="148" rx="14" fill="#11111d" stroke="#1e1e30" stroke-width="1"/>
   <rect x="658" y="230" width="502" height="2.5" rx="1.5" fill="url(#grad)"/>
 
@@ -143,10 +143,10 @@
   </g>
 
   <!-- Text -->
-  <text x="740" y="282" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#ededf2">Piste</text>
-  <text x="740" y="302" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8a8a9e">Ski Companion App</text>
+  <text x="740" y="282" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#ededf2">Tokn</text>
+  <text x="740" y="302" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8a8a9e">macOS menu bar app</text>
   <rect x="740" y="316" width="100" height="20" rx="4" fill="rgba(139,92,246,0.10)" stroke="#2e2e48" stroke-width="1"/>
-  <text x="790" y="330" font-family="sans-serif" font-size="10" font-weight="600" fill="#a78bfa" text-anchor="middle">Android · Kotlin</text>
+  <text x="790" y="330" font-family="sans-serif" font-size="10" font-weight="600" fill="#a78bfa" text-anchor="middle">macOS · Swift</text>
 
   <!-- Mountain silhouette -->
   <g clip-path="url(#cc2)">
@@ -160,7 +160,7 @@
     <path d="M 1143 252 L 1153 267 L 1133 267 Z" fill="rgba(237,237,242,0.45)"/>
   </g>
 
-  <!-- ▸ CARD 3 – FinSight -->
+  <!-- ▸ CARD 3 – Feather -->
   <rect x="658" y="408" width="502" height="148" rx="14" fill="#11111d" stroke="#1e1e30" stroke-width="1"/>
   <rect x="658" y="408" width="502" height="2.5" rx="1.5" fill="url(#grad)"/>
 
@@ -174,10 +174,10 @@
   </g>
 
   <!-- Text -->
-  <text x="740" y="460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#ededf2">FinSight</text>
-  <text x="740" y="480" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8a8a9e">Bloomberg Terminal CLI</text>
+  <text x="740" y="460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="17" font-weight="600" fill="#ededf2">Feather</text>
+  <text x="740" y="480" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="#8a8a9e">Native macOS browser</text>
   <rect x="740" y="494" width="90" height="20" rx="4" fill="rgba(74,108,247,0.10)" stroke="#2e2e48" stroke-width="1"/>
-  <text x="785" y="508" font-family="sans-serif" font-size="10" font-weight="600" fill="#7b93fa" text-anchor="middle">Python · LLM</text>
+  <text x="785" y="508" font-family="sans-serif" font-size="10" font-weight="600" fill="#7b93fa" text-anchor="middle">macOS · Swift</text>
 
   <!-- Bar chart decoration -->
   <g clip-path="url(#cc3)">
