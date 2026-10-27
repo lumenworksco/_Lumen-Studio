@@ -38,7 +38,7 @@ A fast, dependency-free static site written in plain HTML, CSS and JavaScript. T
 
 ## Features
 
-- Responsive layout with a mobile navigation menu
+- Responsive layout: the nav collapses into a slide-out menu below 1180px, with focus states, `aria-expanded` and Escape-to-close
 - Scroll-triggered fade-in animations and a sticky, blurred nav bar
 - Open Graph and Twitter Card metadata with canonical URLs for clean link previews
 - Custom `404` page, `robots.txt` and `sitemap.xml`
