@@ -6,7 +6,7 @@
 
 **AI research. Brilliantly built.**
 
-The website of Lumen Studio, an AI research studio in Luxembourg building intelligent systems, from autonomous trading to NLP models and AI-powered tools.
+The website for Lumen Studio, my personal projects portfolio: intelligent systems, from autonomous trading to NLP models and AI-powered tools.
 
 [![Website](https://img.shields.io/badge/website-lumen.braunf.com-4f6bed?style=flat-square)](https://lumen.braunf.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)

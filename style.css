@@ -13,7 +13,7 @@
     --border-hover: #2e2e48;
     --text: #ededf2;
     --text-muted: #8a8a9e;
-    --text-dim: #5a5a6e;
+    --text-dim: #7c7c92;
     --accent: #4a6cf7;
     --accent-light: #7b93fa;
     --accent-dim: rgba(74, 108, 247, 0.12);
@@ -63,14 +63,26 @@ img { max-width: 100%; display: block; }
     right: 0;
     z-index: 100;
     padding: 0 24px;
-    transition: background var(--transition), backdrop-filter var(--transition);
 }
 
-.nav.scrolled {
+.nav::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     background: rgba(10, 10, 15, 0.88);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
+    opacity: 0;
+    transition: opacity var(--transition);
+}
+
+/* Blur lives on a pseudo-element: backdrop-filter on .nav itself would make it the
+   containing block of the position:fixed mobile menu and clip the menu to 72px. */
+.nav.scrolled::before,
+.nav.menu-open::before {
+    opacity: 1;
 }
 
 .nav-inner {
@@ -1088,7 +1100,7 @@ img { max-width: 100%; display: block; }
     transform: translateY(0);
 }
 
-.nav-mac-item {
+.nav-links .nav-mac-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1100,18 +1112,18 @@ img { max-width: 100%; display: block; }
     border: 1px solid transparent;
     transition: background var(--transition), border-color var(--transition), color var(--transition);
 }
-.nav-mac-item-focus {
+.nav-links .nav-mac-item-focus {
     color: #ff6b60;
 }
-.nav-mac-item-focus:hover {
+.nav-links .nav-mac-item-focus:hover {
     background: rgba(255, 59, 48, 0.1);
     border-color: rgba(255, 59, 48, 0.2);
     color: #ff8a82;
 }
-.nav-mac-item-tokn {
+.nav-links .nav-mac-item-tokn {
     color: #38bdf8;
 }
-.nav-mac-item-tokn:hover {
+.nav-links .nav-mac-item-tokn:hover {
     background: rgba(14, 165, 233, 0.1);
     border-color: rgba(14, 165, 233, 0.2);
     color: #7dd3fc;
@@ -1155,25 +1167,30 @@ img { max-width: 100%; display: block; }
     }
 }
 
-@media (max-width: 640px) {
+/* Nine nav items overflow well before phone width, so collapse to the slide-out menu earlier */
+@media (max-width: 1180px) {
     .nav-links {
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        width: 280px;
+        width: min(300px, 86vw);
         background: var(--bg-raised);
         border-left: 1px solid var(--border);
         flex-direction: column;
         padding: 80px 24px 24px;
         gap: 4px;
         transform: translateX(100%);
-        transition: transform var(--transition);
+        /* visibility keeps the off-screen links out of the tab order while closed */
+        visibility: hidden;
+        transition: transform var(--transition), visibility 0s linear 0.3s;
         z-index: 99;
     }
 
     .nav-links.open {
         transform: translateX(0);
+        visibility: visible;
+        transition: transform var(--transition);
     }
 
     .nav-links a {
@@ -1196,6 +1213,35 @@ img { max-width: 100%; display: block; }
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
+    .nav-mac-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nav-mac-btn {
+        justify-content: space-between;
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+
+    .nav-mac-menu {
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        pointer-events: auto;
+        box-shadow: none;
+        margin-top: 4px;
+    }
+
+    .nav-mac-menu.open {
+        display: flex;
+    }
+}
+
+@media (max-width: 640px) {
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -1258,6 +1304,18 @@ img { max-width: 100%; display: block; }
     }
 }
 
+/* ===== Focus ===== */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent-light);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+.nav-mac-btn:focus-visible {
+    outline: 2px solid var(--accent-light);
+}
+
 /* ===== Reduced motion ===== */
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
@@ -1267,4 +1325,13 @@ img { max-width: 100%; display: block; }
         scroll-behavior: auto !important;
     }
     .fade-in { opacity: 1; transform: none; }
+}
+
+.footer-hub {
+    color: var(--text-muted);
+    transition: color var(--transition);
+}
+
+.footer-hub:hover {
+    color: var(--accent-light);
 }
