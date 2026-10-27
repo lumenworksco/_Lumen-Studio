@@ -1168,7 +1168,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* Nine nav items overflow well before phone width, so collapse to the slide-out menu earlier */
-@media (max-width: 1180px) {
+@media (max-width: 1280px) {
     .nav-links {
         position: fixed;
         top: 0;
@@ -1599,3 +1599,10 @@ button:focus-visible {
 /* Flagship thumbnail: keep the chips legible over any screenshot */
 .pc-flagship .pc-media::after { background: linear-gradient(to top, rgba(18, 18, 30, 0.9) 0%, rgba(18, 18, 30, 0) 34%), linear-gradient(to right, rgba(18, 18, 30, 0) 62%, rgba(18, 18, 30, 0.55)); }
 code { font-family: var(--font-mono); font-size: 0.88em; padding: 1px 6px; border-radius: 5px; background: var(--accent-dim); color: var(--accent-light); }
+
+.nav-links .nav-mac-item-nihongo { color: #f9a8d4; }
+.nav-links .nav-mac-item-nihongo:hover { background: rgba(244, 114, 182, 0.12); border-color: rgba(244, 114, 182, 0.25); color: #fbcfe8; }
+.nav-links .nav-mac-item-go { color: #d6d3d1; }
+.nav-links .nav-mac-item-go:hover { background: rgba(214, 211, 209, 0.1); border-color: rgba(214, 211, 209, 0.22); color: #fff; }
+/* Two dropdowns share the row: keep the buttons level with the links */
+.nav-mac-wrapper + .nav-mac-wrapper { margin-left: -2px; }

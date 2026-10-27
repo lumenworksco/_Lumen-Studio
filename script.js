@@ -53,31 +53,36 @@ document.querySelectorAll('.project-card, .proj-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.08}s`;
 });
 
-// Mac Apps dropdown
-const macBtn = document.getElementById('mac-apps-btn');
-const macMenu = document.getElementById('mac-apps-menu');
+// Dropdowns (Mac Apps, Web Apps): one open at a time
+const dropdowns = [...document.querySelectorAll('.nav-mac-wrapper')].map(w => ({
+    btn: w.querySelector('.nav-mac-btn'),
+    menu: w.querySelector('.nav-mac-menu'),
+})).filter(d => d.btn && d.menu);
 
-function setMacMenu(open) {
-    macMenu.classList.toggle('open', open);
-    macBtn.classList.toggle('open', open);
-    macBtn.setAttribute('aria-expanded', String(open));
+function setDropdown(d, open) {
+    d.menu.classList.toggle('open', open);
+    d.btn.classList.toggle('open', open);
+    d.btn.setAttribute('aria-expanded', String(open));
 }
+const closeDropdowns = () => dropdowns.forEach(d => setDropdown(d, false));
 
-if (macBtn && macMenu) {
-    macBtn.setAttribute('aria-controls', 'mac-apps-menu');
-    macBtn.addEventListener('click', (e) => {
+dropdowns.forEach(d => {
+    d.btn.addEventListener('click', (e) => {
         e.stopPropagation();
-        setMacMenu(!macMenu.classList.contains('open'));
+        const willOpen = !d.menu.classList.contains('open');
+        closeDropdowns();
+        setDropdown(d, willOpen);
     });
-    document.addEventListener('click', () => setMacMenu(false));
-}
+});
+document.addEventListener('click', closeDropdowns);
 
 // Escape closes whichever menu is open and returns focus to its trigger
 document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    if (macMenu && macMenu.classList.contains('open')) {
-        setMacMenu(false);
-        macBtn.focus();
+    const openDropdown = dropdowns.find(d => d.menu.classList.contains('open'));
+    if (openDropdown) {
+        setDropdown(openDropdown, false);
+        openDropdown.btn.focus();
     } else if (links.classList.contains('open')) {
         setMenu(false);
         toggle.focus();
@@ -85,7 +90,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Leaving the mobile layout while the menu is open would leave the page scroll-locked
-window.matchMedia('(min-width: 1181px)').addEventListener('change', (e) => {
+window.matchMedia('(min-width: 1281px)').addEventListener('change', (e) => {
     if (e.matches) setMenu(false);
 });
 

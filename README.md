@@ -34,10 +34,11 @@ A fast, dependency-free static site written in plain HTML, CSS and JavaScript. T
 | [`index.html`](index.html) | Landing page: hero, featured project (Velox), a selection of projects, about and contact |
 | [`projects.html`](projects.html) | All 7 projects with live thumbnails, a category filter and links to each site and repository |
 | [`velox.html`](velox.html) | Velox, the autonomous trading system |
+| [`silkworm.html`](silkworm.html) | Project Silkworm, the self-growing DPO dataset |
 
 ## Features
 
-- Responsive layout: the nav collapses into a slide-out menu below 1180px, with focus states, `aria-expanded` and Escape-to-close
+- Responsive layout: the nav (with Mac Apps and Web Apps dropdowns) collapses into a slide-out menu below 1280px, with focus states, `aria-expanded` and Escape-to-close
 - Project cards with real website thumbnails, a cursor-following spotlight and status chips
 - Scroll-triggered fade-in animations and a sticky, blurred nav bar
 - Open Graph and Twitter Card metadata with canonical URLs for clean link previews
@@ -64,6 +65,7 @@ python3 -m http.server 8000   # http://localhost:8000
 ├── index.html        # Landing page
 ├── projects.html     # All projects
 ├── velox.html        # Velox product page
+├── silkworm.html     # Project Silkworm page
 ├── 404.html          # Not-found page
 ├── style.css         # Shared styles
 ├── script.js         # Nav, menu and scroll animations

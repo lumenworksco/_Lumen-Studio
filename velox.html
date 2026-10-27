@@ -32,11 +32,13 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
-                <li><a href="index.html#work">Work</a></li>
+                <li><a href="velox.html" class="nav-velox">Velox</a></li>
+                <li><a href="silkworm.html" class="nav-velox">Silkworm</a></li>
+                <li><a href="projects.html" class="nav-projects">Projects</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#contact">Contact</a></li>
                 <li class="nav-mac-wrapper">
-                    <button class="nav-mac-btn" id="mac-apps-btn" aria-expanded="false">
+                    <button class="nav-mac-btn" id="mac-apps-btn" aria-expanded="false" aria-controls="mac-apps-menu">
                         Mac Apps
                         <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
@@ -45,7 +47,18 @@
                         <a href="https://feather.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-feather">🪶 Feather</a>
                     </div>
                 </li>
+                <li class="nav-mac-wrapper">
+                    <button class="nav-mac-btn" id="web-apps-btn" aria-expanded="false" aria-controls="web-apps-menu">
+                        Web Apps
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="nav-mac-menu" id="web-apps-menu">
+                        <a href="https://nihongo.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-nihongo">日 Nihongo</a>
+                        <a href="https://go.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-go">● Go no Michi</a>
+                    </div>
+                </li>
                 <li><a href="https://github.com/lumenworksco" target="_blank" rel="noopener" class="nav-github">GitHub</a></li>
+                <li><a href="https://huggingface.co/iPwnds" target="_blank" rel="noopener">Hugging Face</a></li>
             </ul>
         </div>
     </nav>
