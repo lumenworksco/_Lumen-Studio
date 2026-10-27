@@ -31,14 +31,15 @@ A fast, dependency-free static site written in plain HTML, CSS and JavaScript. T
 
 | Page | Description |
 | --- | --- |
-| [`index.html`](index.html) | Landing page: hero, featured work, about and contact |
-| [`projects.html`](projects.html) | Full list of public projects |
+| [`index.html`](index.html) | Landing page: hero, featured project (Velox), a selection of projects, about and contact |
+| [`projects.html`](projects.html) | All 13 projects with live thumbnails, a category filter and links to each site and repository |
 | [`velox.html`](velox.html) | Velox, the autonomous trading system |
 | [`piste.html`](piste.html) | Piste, the ski companion app |
 
 ## Features
 
 - Responsive layout: the nav collapses into a slide-out menu below 1180px, with focus states, `aria-expanded` and Escape-to-close
+- Project cards with real website thumbnails, a cursor-following spotlight and status chips
 - Scroll-triggered fade-in animations and a sticky, blurred nav bar
 - Open Graph and Twitter Card metadata with canonical URLs for clean link previews
 - Custom `404` page, `robots.txt` and `sitemap.xml`

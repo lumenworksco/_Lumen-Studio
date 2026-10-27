@@ -43,7 +43,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Add fade-in class to elements
-document.querySelectorAll('.section-header, .project-card, .proj-card, .about-text, .about-stats, .stat, .contact-inner, .tech-strip, .spotlight-card, .project-hero-content, .project-stat, .strategy-card, .feature-card, .ml-card, .tech-detail-card, .detail-section').forEach(el => {
+document.querySelectorAll('.section-header, .project-card, .proj-card, .about-text, .about-stats, .stat, .contact-inner, .tech-strip, .spotlight-card, .project-hero-content, .project-stat, .strategy-card, .feature-card, .ml-card, .tech-detail-card, .detail-section, .pc').forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
@@ -119,3 +119,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
     if (stored) { pill.href = stored; pill.textContent = '\u2190 Back'; }
 })();
+
+// Project cards: the spotlight follows the cursor
+document.querySelectorAll('.pc').forEach(card => {
+    card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    }, { passive: true });
+}); // pc-spot
