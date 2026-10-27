@@ -8,7 +8,7 @@
 
 The website for Lumen Studio, my personal projects portfolio: intelligent systems, from autonomous trading to NLP models and AI-powered tools.
 
-[![Website](https://img.shields.io/badge/website-lumen.braunf.com-4f6bed?style=flat-square)](https://lumen.braunf.com)
+[![Website](https://img.shields.io/badge/website-projects.braunf.com-4f6bed?style=flat-square)](https://projects.braunf.com)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Hosted on GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?style=flat-square&logo=github)](https://pages.github.com)
 ![No build step](https://img.shields.io/badge/build-none-success?style=flat-square)
@@ -76,7 +76,7 @@ python3 -m http.server 8000   # http://localhost:8000
 
 ## Deployment
 
-The site is served by GitHub Pages from the `main` branch at [lumen.braunf.com](https://lumen.braunf.com). The custom domain is set in [`CNAME`](CNAME), and `.nojekyll` disables Jekyll processing. Pushing to `main` deploys the site.
+The site is served by GitHub Pages from the `main` branch at [projects.braunf.com](https://projects.braunf.com). The custom domain is set in [`CNAME`](CNAME), and `.nojekyll` disables Jekyll processing. Pushing to `main` deploys the site.
 
 ## Contact
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lumen.braunf.com/sitemap.xml
+Sitemap: https://projects.braunf.com/sitemap.xml
