@@ -81,7 +81,7 @@ The site is served by GitHub Pages from the `main` branch at [projects.braunf.co
 
 ## Contact
 
-- Email: [braunf25@proton.me](mailto:braunf25@proton.me)
+- Email: [contact@braunf.com](mailto:contact@braunf.com)
 - GitHub: [@lumenworksco](https://github.com/lumenworksco)
 - Hugging Face: [iPwnds](https://huggingface.co/iPwnds)
 
