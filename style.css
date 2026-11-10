@@ -219,6 +219,34 @@ img { max-width: 100%; display: block; }
     background: var(--accent-dim);
 }
 
+.hero-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 26px;
+    padding: 6px 16px 6px 6px;
+    border: 1px solid var(--accent-dim);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+.hero-new:hover { border-color: var(--accent); background: var(--accent-dim); }
+.hero-new-tag {
+    padding: 3px 11px;
+    border-radius: 100px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-new svg { width: 14px; height: 14px; color: var(--accent-light); transition: transform 0.2s; }
+.hero-new:hover svg { transform: translateX(3px); }
+
 .hero-title {
     font-size: clamp(2.8rem, 7vw, 5rem);
     font-weight: 700;

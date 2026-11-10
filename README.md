@@ -33,6 +33,7 @@ A fast, dependency-free static site written in plain HTML, CSS and JavaScript. T
 | --- | --- |
 | [`index.html`](index.html) | Landing page: hero, featured project (Velox), a selection of projects, about and contact |
 | [`projects.html`](projects.html) | All 7 projects with live thumbnails, a category filter and links to each site and repository |
+| [`lexeuropa.html`](lexeuropa.html) | LexEuropa, the EU legal research assistant |
 | [`velox.html`](velox.html) | Velox, the autonomous trading system |
 | [`silkworm.html`](silkworm.html) | Project Silkworm, the self-growing DPO dataset |
 
@@ -66,6 +67,7 @@ python3 -m http.server 8000   # http://localhost:8000
 ├── projects.html     # All projects
 ├── velox.html        # Velox product page
 ├── silkworm.html     # Project Silkworm page
+├── lexeuropa.html    # LexEuropa page
 ├── 404.html          # Not-found page
 ├── style.css         # Shared styles
 ├── script.js         # Nav, menu and scroll animations

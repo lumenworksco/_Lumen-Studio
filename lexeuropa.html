@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexEuropa — EU legal research with checked citations — Lumen Studio</title>
+    <meta name="description" content="LexEuropa is an open-model AI research assistant for EU law: every statement is tied to the exact article or judgment paragraph it comes from, and every citation is verified.">
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="LexEuropa — Lumen Studio">
+    <meta property="og:description" content="An open-model AI research assistant for EU law, with every citation verified.">
+    <meta property="og:image"       content="https://projects.braunf.com/assets/og-image.png">
+    <meta name="twitter:card"       content="summary_large_image">
+    <meta name="twitter:title"      content="LexEuropa — Lumen Studio">
+    <meta name="twitter:description" content="An open-model AI research assistant for EU law, with every citation verified.">
+    <meta name="twitter:image"      content="https://projects.braunf.com/assets/og-image.png">
+    <meta name="theme-color" content="#0a0a0f">
+    <meta property="og:site_name" content="Lumen Studio">
+    <meta property="og:image:alt" content="Lumen Studio: Beautiful software. Brilliantly built.">
+    <link rel="canonical" href="https://projects.braunf.com/lexeuropa.html">
+    <meta property="og:url" content="https://projects.braunf.com/lexeuropa.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo.png" alt="Lumen Studio" class="nav-logo-img">
+                Lumen Studio
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="lexeuropa.html" class="nav-velox">LexEuropa</a></li>
+                <li><a href="lexeuropa.html" class="nav-velox">LexEuropa</a></li>
+                <li><a href="velox.html" class="nav-velox">Velox</a></li>
+                <li><a href="silkworm.html" class="nav-velox">Silkworm</a></li>
+                <li><a href="projects.html" class="nav-projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="nav-mac-wrapper">
+                    <button class="nav-mac-btn" id="mac-apps-btn" aria-expanded="false" aria-controls="mac-apps-menu">
+                        Mac Apps
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="nav-mac-menu" id="mac-apps-menu">
+                        <a href="https://tokn.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-tokn">◈ Tokn</a>
+                        <a href="https://feather.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-feather">🪶 Feather</a>
+                    </div>
+                </li>
+                <li class="nav-mac-wrapper">
+                    <button class="nav-mac-btn" id="web-apps-btn" aria-expanded="false" aria-controls="web-apps-menu">
+                        Web Apps
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="nav-mac-menu" id="web-apps-menu">
+                        <a href="https://nihongo.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-nihongo">日 Nihongo</a>
+                        <a href="https://go.braunf.com" target="_blank" rel="noopener" class="nav-mac-item nav-mac-item-go">● Go no Michi</a>
+                    </div>
+                </li>
+                <li><a href="https://github.com/lumenworksco" target="_blank" rel="noopener" class="nav-github">GitHub</a></li>
+                <li><a href="https://huggingface.co/iPwnds" target="_blank" rel="noopener">Hugging Face</a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <section class="project-hero">
+        <div class="project-hero-bg">
+            <div class="project-hero-glow"></div>
+        </div>
+        <div class="container">
+            <a href="projects.html" class="back-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to projects
+            </a>
+            <div class="project-hero-content">
+                <div class="project-hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10M10 21V10M14 21V10M19 21V10M3 10l9-6 9 6"/></svg>
+                </div>
+                <div class="project-hero-meta">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">RAG</span>
+                    <span class="project-tag">LoRA</span>
+                    <span class="project-tag">Hugging Face</span>
+                </div>
+                <h1 class="project-hero-title">LexEuropa</h1>
+                <p class="project-hero-sub">An open-model research assistant for EU law. You ask in plain language; it answers in numbered statements, each tied to the exact article or judgment paragraph it comes from, and an independent check labels whether the cited text really supports it. A research aid, not a lawyer.</p>
+                <div class="hero-actions" style="justify-content:flex-start;margin-top:8px">
+                    <a href="https://lex.braunf.com" target="_blank" rel="noopener" class="btn btn-primary"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>Visit the website</a>
+                    <a href="https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged-v4" target="_blank" rel="noopener" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>Model on Hugging Face</a>
+                    <a href="https://github.com/lumenworksco/-LexEuropa" target="_blank" rel="noopener" class="btn btn-ghost"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-stats-section">
+        <div class="container">
+            <div class="project-stats-grid">
+                <div class="project-stat"><span class="project-stat-number">81</span><span class="project-stat-label">EU instruments</span></div>
+                <div class="project-stat"><span class="project-stat-number">14,880</span><span class="project-stat-label">Passages indexed</span></div>
+                <div class="project-stat"><span class="project-stat-number">38</span><span class="project-stat-label">Court of Justice judgments</span></div>
+                <div class="project-stat"><span class="project-stat-number">141</span><span class="project-stat-label">Automated tests</span></div>
+            </div>
+            <p style="text-align:center;margin-top:18px;font-size:0.8rem;color:var(--text-dim)">Counts from the current corpus and test suite (2026-11-10). English only; no national law.</p>
+        </div>
+    </section>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="detail-section">
+                <div class="section-header">
+                    <p class="section-label">How it works</p>
+                    <h2 class="section-title">Retrieval, writing and checking as separate steps</h2>
+                </div>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">01</div>
+                        <h3>Find the sources</h3>
+                        <p>An exact-reference resolver (“Art. 17(1) GDPR”, “C-131/12”), keyword search and meaning-based search are fused into one ranking. Naming a law restricts the search to it.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">02</div>
+                        <h3>Add the context</h3>
+                        <p>The top articles are expanded to their other paragraphs and the rulings of leading judgments are added, because a complete answer needs the whole provision.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">03</div>
+                        <h3>Write the statements</h3>
+                        <p>A small open model, LoRA-tuned for citation discipline, drafts short statements with source handles. A larger stock model takes over if it refuses or misses the question.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">04</div>
+                        <h3>Check every citation</h3>
+                        <p>A cited passage that was never retrieved is rejected by a hard check with no model involved. Each remaining citation is judged separately by an independent model.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">05</div>
+                        <h3>Warn and withhold</h3>
+                        <p>Out-of-library questions get a plain refusal, answers that cite repealed law are flagged, and statements that do not answer the question are withheld.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <div class="strategy-alloc">06</div>
+                        <h3>Show the evidence</h3>
+                        <p>Statements, their labels and the cited passages appear together in a reading-first interface with a sticky sources panel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <div class="section-header">
+                    <p class="section-label">The library</p>
+                    <h2 class="section-title">EU law, fetched and checked at the source</h2>
+                </div>
+                <div class="ml-grid">
+                    <div class="ml-card">
+                        <h3>81 instruments</h3>
+                        <p>Treaties and the Charter; data protection and digital law; consumer, contract and private international law; competition; employment and equality; whistleblowing, free movement, crypto-assets, copyright, cyber resilience and asylum.</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>38 judgments</h3>
+                        <p>Every paragraph plus the operative part (the ruling), from Google Spain, Schrems and Planet49 to Kadi, Francovich, Bosman and Google Shopping.</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>Current text</h3>
+                        <p>Everything comes from the EU Publications Office, with every article and paragraph number checked. Acts amended since publication are read from their latest consolidated version.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <div class="section-header">
+                    <p class="section-label">Measured</p>
+                    <h2 class="section-title">Scored against checklists, with the caveats stated</h2>
+                </div>
+                <div class="ml-grid">
+                    <div class="ml-card">
+                        <h3>0.87 completeness</h3>
+                        <p>Average share of the key points a complete answer must contain, with 71% of answers fully complete (28 hand-written questions; each key phrase was checked against the provision it is based on).</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>0.87 / 0.88 citations</h3>
+                        <p>Cited-source precision and recall on 25 natural-language questions, with the right source in the top results for 96% of them.</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>4 of 4 declined</h3>
+                        <p>Questions outside the library, such as national tax law, US law or predicting a court case, are refused instead of answered.</p>
+                    </div>
+                </div>
+                <p style="margin-top:18px;font-size:0.85rem;color:var(--text-dim)">These sets are small and each was run once. They were measured on the earlier 31-instrument library; the run on the full 81-instrument library is still to come. Completeness means coverage of the checklist, not legal correctness.</p>
+            </div>
+
+            <div class="detail-section">
+                <div class="section-header">
+                    <p class="section-label">Limitations</p>
+                    <h2 class="section-title">What it is, and is not</h2>
+                </div>
+                <div class="ml-grid">
+                    <div class="ml-card">
+                        <h3>A research aid</h3>
+                        <p>It gives no legal advice. Answers can be incomplete or wrong; the cited text and the labels exist so you can check them.</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>Not covered</h3>
+                        <p>National law, Strasbourg human-rights case law (the source sites refuse automated access), Advocate General opinions, other languages, and judgments from before about 1991.</p>
+                    </div>
+                    <div class="ml-card">
+                        <h3>Open and reproducible</h3>
+                        <p>Code under MIT; the fine-tuned model, its adapter and its training data are public. Training data is built from real provision text only; none is model-written.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <div class="section-header">
+                    <p class="section-label">Run your own</p>
+                    <h2 class="section-title">Built to be reproduced</h2>
+                </div>
+                <div class="tech-detail-grid">
+                    <div class="tech-detail-card">
+                        <h4>Stack</h4>
+                        <div class="tech-tags">
+                            <span class="project-tag">Python 3.11+</span>
+                            <span class="project-tag">rank_bm25</span>
+                            <span class="project-tag">bge-large-en-v1.5</span>
+                            <span class="project-tag">Qwen2.5-3B + LoRA</span>
+                            <span class="project-tag">Hugging Face</span>
+                            <span class="project-tag">pytest + jsdom</span>
+                        </div>
+                    </div>
+                    <div class="tech-detail-card">
+                        <h4>Models and data</h4>
+                        <ul class="arch-list">
+                            <li><code>lexeuropa-qwen3b-merged-v4</code> the generator</li>
+                            <li>An independent 7B judge checks each citation</li>
+                            <li>Training data is public on the Hub</li>
+                            <li>Scale-to-zero endpoint, nothing heavy locally</li>
+                        </ul>
+                    </div>
+                    <div class="tech-detail-card">
+                        <h4>Quick start</h4>
+                        <ul class="arch-list">
+                            <li>Clone the repo and create a virtual environment</li>
+                            <li><code>pip install -e ".[dev]"</code></li>
+                            <li>Put <code>HF_TOKEN</code> in <code>.env</code>, then <code>python -m lexeuropa.cli ingest</code></li>
+                            <li><code>python3 -m lexeuropa.cli serve</code></li>
+                        </ul>
+                    </div>
+                    <div class="tech-detail-card">
+                        <h4>Project layout</h4>
+                        <ul class="arch-list">
+                            <li><code>lexeuropa/ingest</code> fetching and parsing</li>
+                            <li><code>lexeuropa/retrieval</code> hybrid search and fusion</li>
+                            <li><code>lexeuropa/verification</code> citation checks</li>
+                            <li><code>eval/</code> question sets and graders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <div class="container">
+            <div class="contact-inner">
+                <p class="section-label">Explore</p>
+                <h2 class="section-title">See it, read it, run it</h2>
+                <p class="contact-sub">LexEuropa is open source. The code is MIT, the legal texts are reused under the EU's reuse policy, and the models live on the Hugging Face Hub.</p>
+                <div class="contact-links">
+                    <a href="https://lex.braunf.com" target="_blank" rel="noopener" class="btn btn-primary btn-lg"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>Visit the website</a>
+                    <a href="https://github.com/lumenworksco/-LexEuropa" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>GitHub</a>
+                    <a href="projects.html" class="btn btn-ghost btn-lg">All projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Lumen Studio" class="footer-logo-img">
+                    Lumen Studio
+                </div>
+                <p class="footer-copy">&copy; 2026 Lumen Studio. Luxembourg. &middot; <a href="https://braunf.com" class="footer-hub">&larr; braunf.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="back-pill" data-back href="https://braunf.com/">&larr; braunf.com</a>
+<script src="script.js"></script>
+</body>
+</html>
